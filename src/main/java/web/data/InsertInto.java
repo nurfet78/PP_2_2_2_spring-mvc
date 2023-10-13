@@ -8,7 +8,7 @@ import java.util.List;
 
 public class InsertInto {
 
-    private List<Car> cars = new ArrayList<>();
+    private final List<Car> cars;
     public InsertInto() {
         cars = Arrays.asList(
                 new Car("Ford","2001", "234"),
