@@ -11,7 +11,11 @@ import java.util.stream.Stream;
 @Service
 public class CarServiceImpl implements CarService{
 
-    private final InsertInto cars = new InsertInto();
+    private final InsertInto cars;
+
+    CarServiceImpl(InsertInto cars) {
+        this.cars = cars;
+    }
 
     @Override
     public List<Car> getListCar(int num) {
